@@ -18,9 +18,19 @@ private:
 	GLCore::Utils::Shader* m_Shader;
 	GLCore::Utils::OrthographicCameraController m_CameraController;
 	
-	GLuint m_QuadVA, m_QuadVB, m_QuadIB;
+	glm::vec4 getPointAndWeight(glm::vec2 p0, glm::vec2 p1, glm::vec2 p2, glm::vec2 p3);
+	float solveQuadratic(float a, float b, float c);
+	void getTextureCoord();
 
-	glm::vec4 m_SquareBaseColor = { 0.8f, 0.2f, 0.3f, 1.0f };
-	glm::vec4 m_SquareAlternateColor = { 0.2f, 0.3f, 0.8f, 1.0f };
-	glm::vec4 m_SquareColor = m_SquareBaseColor;
+	float markerSize = 5.0f;
+	int currPoint = 0;
+
+	glm::vec2 testPoint = {0.0f, 0.0f};
+
+	GLuint m_QuadVA, m_QuadVB, m_QuadIB;
+	std::vector<glm::vec2> controlPoints = {
+		{500.0f, 200.0f}, {700.0f, 200.0f}, {900.0f, 200.0f},
+		{500.0f, 400.0f}, {700.0f, 400.0f}, {900.0f, 400.0f},
+		{500.0f, 600.0f}, {700.0f, 600.0f}, {900.0f, 600.0f}
+	};
 };
