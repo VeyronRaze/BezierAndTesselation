@@ -6,5 +6,5 @@ uniform vec4 u_Color;
 
 void main()
 {
-	o_Color = u_Color;
+	o_Color = u_Color * vec4(1.0f);
 }
