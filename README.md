@@ -1,12 +1,10 @@
-# OpenGL-Core
-Work-in-progress OpenGL library that aims to provide a powerful sandbox for you to learn or experiment with OpenGL, and graphics programming in general.
+# Bezier and Tessellation proof of concept
+This project was created to experiment with bezier curves, surfaces and tessellative method of approximating them, also mapping textures to surfaces. This project was based on [Cherno's OpenGL Core](https://github.com/TheCherno/OpenGL) to speed up set-up phase.
 
-## Usage
+Current version has a lot of bugs and problems, but it was made just as proof of concept.
 
-Currently only "officially" supports Windows - Mac and Linux support is coming soon.
-
-```
-git clone --recursive https://github.com/TheCherno/OpenGL
-```
-
-Run `scripts/Win-Premake.bat` and open `OpenGL-Sandbox.sln` in Visual Studio 2019. `OpenGL-Sandbox/src/SandboxLayer.cpp` contains the example OpenGL code that's running.
+## Screenshots
+![image](https://user-images.githubusercontent.com/43910111/188999188-8f594743-3ae0-4cf9-9c54-c01fc8abdafc.png)
+![image](https://user-images.githubusercontent.com/43910111/189000183-8ee22956-7a57-4aad-b588-eabb03d75e71.png)
+![image](https://user-images.githubusercontent.com/43910111/189000201-1edd177a-3358-4fdb-8ddf-ca7b001c47b2.png)
+![image](https://user-images.githubusercontent.com/43910111/189000214-336d9286-4508-40b5-ab6d-d9d039ed2b57.png)
